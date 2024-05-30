@@ -13,7 +13,6 @@ historical_data.dropna(inplace=True)  # Drop rows with NaN values if any
 # Streamlit app interface with CSS styling to remove space from the top
 st.write('<style>body { margin: 0; padding: 0; }</style>', unsafe_allow_html=True)
 st.write('<div style="text-align:center; color:black;"><h1><b>Average Temperature Forecasting App for Boston (from 2024)</b></h1></div>', unsafe_allow_html=True)
-st.write('<div style="text-align:center; color:black;"><h2><b>(ARIMA Model)</b></h2></div>', unsafe_allow_html=True)
 
 # Define the number of future periods (user input)
 user_input = st.text_input('Enter future periods:', '10')
